@@ -1,3 +1,8 @@
 package com.example.dependencyinjectionstart.example1
 
-class Computer
+class Computer(
+    monitor: Monitor,
+    keyboard: Keyboard,
+    mouse: Mouse,
+    computerTower: ComputerTower
+)
