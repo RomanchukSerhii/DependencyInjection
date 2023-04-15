@@ -1,4 +1,5 @@
 package com.example.dependencyinjectionstart.example1
 
-class Processor {
-}
+import javax.inject.Inject
+
+class Processor

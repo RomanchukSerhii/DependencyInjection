@@ -1,6 +1,8 @@
 package com.example.dependencyinjectionstart.example1
 
-class ComputerTower(
+import javax.inject.Inject
+
+class ComputerTower (
     storage: Storage,
     memory: Memory,
     processor: Processor
