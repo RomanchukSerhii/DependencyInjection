@@ -15,7 +15,6 @@ class ExampleApiService @Inject constructor(
     }
 
     companion object {
-
         private const val LOG_TAG = "EXAMPLE_TEST"
     }
 }
