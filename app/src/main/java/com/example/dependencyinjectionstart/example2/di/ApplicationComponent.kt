@@ -9,11 +9,11 @@ import dagger.Component
 import javax.inject.Singleton
 
 @ApplicationScope
-@Component(modules = [DataModule::class, DomainModule::class, ViewModelModule::class])
+@Component(modules = [DataModule::class, DomainModule::class])
 interface ApplicationComponent {
 
-    fun inject(application: MainActivity)
-    fun inject(application: MainActivity2)
+    fun activityComponentFactory() : ActivityComponent.Factory
+
 
     @Component.Factory
     interface ApplicationComponentFactory {
