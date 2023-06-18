@@ -1,5 +1,8 @@
-package com.example.dependencyinjectionstart.example2.di
+package com.example.dependencyinjectionstart.example2.di.components
 
+import com.example.dependencyinjectionstart.example2.di.annotations.IdQualifier
+import com.example.dependencyinjectionstart.example2.di.annotations.NameQualifier
+import com.example.dependencyinjectionstart.example2.di.modules.ViewModelModule
 import com.example.dependencyinjectionstart.example2.presentation.MainActivity
 import com.example.dependencyinjectionstart.example2.presentation.MainActivity2
 import dagger.BindsInstance
@@ -14,7 +17,8 @@ interface ActivityComponent {
     interface Factory {
 
         fun create(
-            @BindsInstance id: String
+            @BindsInstance @IdQualifier id: String,
+            @BindsInstance @NameQualifier name: String
         ) : ActivityComponent
     }
 }

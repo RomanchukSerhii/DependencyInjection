@@ -1,12 +1,11 @@
-package com.example.dependencyinjectionstart.example2.di
+package com.example.dependencyinjectionstart.example2.di.components
 
-import android.app.Application
 import android.content.Context
-import com.example.dependencyinjectionstart.example2.presentation.MainActivity
-import com.example.dependencyinjectionstart.example2.presentation.MainActivity2
+import com.example.dependencyinjectionstart.example2.di.annotations.ApplicationScope
+import com.example.dependencyinjectionstart.example2.di.modules.DataModule
+import com.example.dependencyinjectionstart.example2.di.modules.DomainModule
 import dagger.BindsInstance
 import dagger.Component
-import javax.inject.Singleton
 
 @ApplicationScope
 @Component(modules = [DataModule::class, DomainModule::class])

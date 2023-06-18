@@ -1,4 +1,4 @@
-package com.example.dependencyinjectionstart.example2.di
+package com.example.dependencyinjectionstart.example2.di.modules
 
 import com.example.dependencyinjectionstart.example2.data.repository.ExampleRepositoryImpl
 import com.example.dependencyinjectionstart.example2.domain.ExampleRepository

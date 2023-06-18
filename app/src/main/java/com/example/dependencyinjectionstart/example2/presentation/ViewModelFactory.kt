@@ -2,9 +2,6 @@ package com.example.dependencyinjectionstart.example2.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.dependencyinjectionstart.example2.di.ApplicationScope
-import com.example.dependencyinjectionstart.example2.domain.ExampleRepository
-import com.example.dependencyinjectionstart.example2.domain.ExampleUseCase
 import javax.inject.Inject
 import javax.inject.Provider
 
